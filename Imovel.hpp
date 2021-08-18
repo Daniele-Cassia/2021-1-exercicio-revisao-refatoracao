@@ -10,12 +10,12 @@ using namespace std;
 class Imovel {
     public:
         double area;
-        int Q;
-        int B;
-        int V;
-        double valorFm2;
-        double valor;
-        double C;
+        int quartos;
+        int banheiros;
+        int vagas;
+        double valorm2;
+        double valorDeVenda;
+        double comissao;
         Cliente vendedor;
         string corretor;
 
@@ -24,6 +24,10 @@ class Imovel {
             vendedor.print();
             cout << "[Corretor]" << endl;
             cout << "  " + corretor << endl;
+        }
+
+        virtual double calculaValorDeVenda() {
+            return area * valorm2;
         }
 };
 

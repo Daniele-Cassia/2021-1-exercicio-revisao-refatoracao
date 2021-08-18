@@ -27,7 +27,7 @@ int main() {
     
     Cliente cl3;
     cl3.nome = "Vuocue Leiur Baonauza";
-    cl3.endereco = "Rua Orminda de Almeida - Tupi B";
+    cl3.endereco = "Rua Orminda de Almeida - Tupi banheiros";
     cl3.cidade = "Belo Horizonte";
     cl3.uf = "MG";
     cl3.cep = "31842-630";
@@ -35,7 +35,7 @@ int main() {
     
     Cliente cl4;
     cl4.nome = "Zerer Huduy Fyogar";
-    cl4.endereco = "Rua Taquaril - Jonas Veiga";
+    cl4.endereco = "Rua Taquartosuaril - Jonas Veiga";
     cl4.cidade = "Belo Horizonte";
     cl4.uf = "MG";
     cl4.cep = "30285-422";
@@ -73,172 +73,172 @@ int main() {
     cl8.cep = "30668-430";
     cl8.telefone = "3197317802";
 
-    int qtdeA = 0;
-    int qtdeCa = 0;
-    int qtdeCb = 0;
+    int quartostdeA = 0;
+    int quartostdeCa = 0;
+    int quartostdeCb = 0;
 
     Apartamento ap1;
     ap1.corretor = "Tuoruars";
     ap1.area = 55.4;
-    ap1.Q = 2;
-    ap1.B = 1;
-    ap1.V = 0;
-    ap1.valorFm2 = 987.0;
-    ap1.C = ap1.comissao();
-    ap1.valor = ap1.valor() + ap1.comissao();
+    ap1.quartos = 2;
+    ap1.banheiros = 1;
+    ap1.vagas = 0;
+    ap1.valorDeVendam2 = 987.0;
+    ap1.comissao = ap1.comissao();
+    ap1.valorDeVenda = ap1.calculaValorDeVenda() + ap1.comissao();
     ap1.vendedor = cl1;
-    qtdeA++;
+    quartostdeA++;
 
     Apartamento ap2;
     ap2.corretor = "Fyubyeis";
     ap2.area = 74.5;
-    ap2.Q = 2;
-    ap2.B = 1;
-    ap2.V = 2;
-    ap2.valorFm2 = 1540.0;
-    ap2.C = ap2.comissao();
-    ap2.valor = ap2.valor() + ap2.comissao();
+    ap2.quartos = 2;
+    ap2.banheiros = 1;
+    ap2.vagas = 2;
+    ap2.valorDeVendam2 = 1540.0;
+    ap2.comissao = ap2.comissao();
+    ap2.valorDeVenda = ap2.calculaValorDeVenda() + ap2.comissao();
     ap2.vendedor = cl2;
-    qtdeA++;
+    quartostdeA++;
 
     Apartamento ap3;
     ap3.corretor = "Kelia";
     ap3.area = 87.2;
-    ap3.Q = 3;
-    ap3.B = 2;
-    ap3.V = 2;
-    ap3.valorFm2 = 2354.0;
-    ap3.C = ap3.comissao();
-    ap3.valor = ap3.valor() + ap3.comissao();
+    ap3.quartos = 3;
+    ap3.banheiros = 2;
+    ap3.vagas = 2;
+    ap3.valorDeVendam2 = 2354.0;
+    ap3.comissao = ap3.comissao();
+    ap3.valorDeVenda = ap3.calculaValorDeVenda() + ap3.comissao();
     ap3.vendedor = cl3;
-    qtdeA++;
+    quartostdeA++;
 
     // Cobertura
     Cobertura cb1;
     cb1.corretor = "Koci";
     cb1.area = 120.1;
-    cb1.Q = 3;
-    cb1.B = 3;
-    cb1.V = 2;
-    cb1.valorFm2 = 3123.5;
-    cb1.C = cb1.comissao();
-    cb1.valor = cb1.valor() + cb1.comissao();
+    cb1.quartos = 3;
+    cb1.banheiros = 3;
+    cb1.vagas = 2;
+    cb1.valorDeVendam2 = 3123.5;
+    cb1.comissao = cb1.comissao();
+    cb1.valorDeVenda = cb1.calculaValorDeVenda() + cb1.comissao();
     cb1.vendedor = cl4;
-    qtdeCb++;
+    quartostdeCb++;
     
     Cobertura cb2;
     cb2.corretor = "Wail";
     cb2.area = 134.8;
-    cb2.Q = 4;
-    cb2.B = 3;
-    cb2.V = 3;
-    cb2.valorFm2 = 3578.2;
-    cb2.C = cb2.comissao();
-    cb2.valor = cb2.valor() + cb2.comissao();
+    cb2.quartos = 4;
+    cb2.banheiros = 3;
+    cb2.vagas = 3;
+    cb2.valorDeVendam2 = 3578.2;
+    cb2.comissao = cb2.comissao();
+    cb2.valorDeVenda = cb2.calculaValorDeVenda() + cb2.comissao();
     cb2.vendedor = cl5;
-    qtdeCb++;
+    quartostdeCb++;
 
     Cobertura cb3;
     cb3.corretor = "Fival";
     cb3.area = 180.0;
-    cb3.Q = 4;
-    cb3.B = 4;
-    cb3.V = 4;
-    cb3.valorFm2 = 4165.7;
-    cb3.C = cb3.comissao();
-    cb3.valor = cb3.valor() + cb3.comissao();
+    cb3.quartos = 4;
+    cb3.banheiros = 4;
+    cb3.vagas = 4;
+    cb3.valorDeVendam2 = 4165.7;
+    cb3.comissao = cb3.comissao();
+    cb3.valorDeVenda = cb3.calculaValorDeVenda() + cb3.comissao();
     cb3.vendedor = cl6;
-    qtdeCb++;
+    quartostdeCb++;
 
     // Casas
     Casa ca1;
     ca1.corretor = "Beydo";
     ca1.area = 145.6;
-    ca1.Q = 3;
-    ca1.B = 3;
-    ca1.V = 2;
-    ca1.valorFm2 = 4023.6;
-    ca1.C = ca1.comissao();
-    ca1.valor = ca1.valor() + ca1.comissao();
+    ca1.quartos = 3;
+    ca1.banheiros = 3;
+    ca1.vagas = 2;
+    ca1.valorDeVendam2 = 4023.6;
+    ca1.comissao = ca1.comissao();
+    ca1.valorDeVenda = ca1.calculaValorDeVenda() + ca1.comissao();
     ca1.vendedor = cl7;
-    qtdeCa++;
+    quartostdeCa++;
 
     Casa ca2;
     ca2.corretor = "Riuzi";
     ca2.area = 245.0;
-    ca2.Q = 5;
-    ca2.B = 4;
-    ca2.V = 4;
-    ca2.valorFm2 = 4856.2;
-    ca2.C = ca2.comissao();
-    ca2.valor = ca2.valor() + ca2.comissao();
+    ca2.quartos = 5;
+    ca2.banheiros = 4;
+    ca2.vagas = 4;
+    ca2.valorDeVendam2 = 4856.2;
+    ca2.comissao = ca2.comissao();
+    ca2.valorDeVenda = ca2.calculaValorDeVenda() + ca2.comissao();
     ca2.vendedor = cl8;
-    qtdeCa++;
+    quartostdeCa++;
 
     std::cout << "\n>> Relatório de Imóveis <<" << endl;
 
-    double valorAp = 0.0;
-    double valorCb = 0.0;
-    double valorCa = 0.0;
+    double valorDeVendaAp = 0.0;
+    double valorDeVendaCb = 0.0;
+    double valorDeVendaCa = 0.0;
     double comissAp = 0.0;
     double comissCb = 0.0;
     double comissCa = 0.0;
     
     ap1.print();
-    valorAp += ap1.valor();
+    valorDeVendaAp += ap1.calculaValorDeVenda();
     comissAp += ap1.comissao();
     std::cout << endl;
 
     ap2.print();
-    valorAp += ap2.valor();
+    valorDeVendaAp += ap2.calculaValorDeVenda();
     comissAp += ap2.comissao();
     std::cout << endl;
 
     ap3.print();
-    valorAp += ap3.valor();
+    valorDeVendaAp += ap3.calculaValorDeVenda();
     comissAp += ap3.comissao();
     std::cout << endl;
 
     cb1.print();
-    valorCb += cb1.valor();
+    valorDeVendaCb += cb1.calculaValorDeVenda();
     comissCb += cb1.comissao();
     std::cout << endl;
 
     cb2.print();
-    valorCb += cb2.valor();
+    valorDeVendaCb += cb2.calculaValorDeVenda();
     comissCb += cb2.comissao();
     std::cout << endl;
 
     cb3.print();
-    valorCb += cb3.valor();
+    valorDeVendaCb += cb3.calculaValorDeVenda();
     comissCb += cb3.comissao();
     std::cout << endl;
 
     ca1.print();
-    valorCa += ca1.valor();
+    valorDeVendaCa += ca1.calculaValorDeVenda();
     comissCa += ca1.comissao();
     std::cout << endl;
 
     ca2.print();
-    valorCa += ca2.valor();
+    valorDeVendaCa += ca2.calculaValorDeVenda();
     comissCa += ca2.comissao();
     std::cout << endl;
 
     std::cout << "\n>> Resumo Geral <<" << endl;
 
     std::cout << "\n>>Apartamentos<<\n"
-        << "\n Quantidade: " << qtdeA
-        << "\n valor Total: R$ " << fixed << setprecision(2) << valorAp
+        << "\n quartosuantidade: " << quartostdeA
+        << "\n valorDeVenda Total: R$ " << fixed << setprecision(2) << valorDeVendaAp
         << "\n Comissão Total: R$" << comissAp
         << endl
         << "\n>>Coberturas<<\n"
-        << "\n Quantidade: " << qtdeCb
-        << "\n valor Total: R$ " << fixed << setprecision(2) << valorCb
+        << "\n quartosuantidade: " << quartostdeCb
+        << "\n valorDeVenda Total: R$ " << fixed << setprecision(2) << valorDeVendaCb
         << "\n Comissão Total: R$ " << fixed << setprecision(2) << comissCb
         << endl
         << "\n>>Casas<<\n"
-        << "\n Quantidade: " << qtdeCa
-        << "\n valor Total: R$ " << fixed << setprecision(2) << valorCa
+        << "\n quartosuantidade: " << quartostdeCa
+        << "\n valorDeVenda Total: R$ " << fixed << setprecision(2) << valorDeVendaCa
         << "\n Comissão Total: R$ " << fixed << setprecision(2) << comissCa
         << endl;
 }

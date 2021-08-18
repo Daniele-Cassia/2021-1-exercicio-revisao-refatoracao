@@ -7,26 +7,23 @@ using namespace std;
 
 class Cobertura : public Imovel {
     public:
-        double valor() {
-            double v = area * valorFm2;
-            return v;
-        }
-
+        double valorDeVenda = calculaValorDeVenda();
+        
+        // essa função calcula o valor da comissao baseado no valor de venda do imóvel
         double comissao() {
-            double c = area * valorFm2;
-            return c * 0.10;
+            return valorDeVenda * 0.04;
         }
 
         void print() {
-            std::cout << "[Cobertura]" << endl;
+            std::cout << "[Apartamento]" << endl;
             Imovel::print();
             std::cout << "Area: " << area << endl
-                << "  Quartos: " << Q << endl
-                << "  Banheiros: " << B << endl
-                << "  Vagas: " << V << endl
-                << "Taxa de Comissão: " << 10 << "%" << endl
-                << "Valor Comissão: R$ " << fixed << setprecision(2) << C << endl
-                << "Valor de Venda: R$ " << fixed << setprecision(2) << valor << endl;
+                << "  Quartos: " << quartos << endl
+                << "  Banheiros: " << banheiros << endl
+                << "  Vagas: " << vagas << endl
+                << "Taxa de Comissão: " << 4 << "%" << endl
+                << "Valor Comissão: R$ " << fixed << setprecision(2) << comissao << endl
+                << "Valor de Venda: R$ " << fixed << setprecision(2) << valorDeVenda << endl;
         }
 };
 
